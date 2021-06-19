@@ -1,0 +1,37 @@
+{
+
+    "botToken": "1835691730:AAEhPOZCRgRj-qcnetHINstWtLCeUWjv568",
+
+    "connectionType": "polling",
+
+    "webhookOptions":{
+        "webhookHost": null,
+        
+        "webhookPort": null,
+        
+        "webhookListen": "0.0.0.0",
+        
+        "sslCertificate": null,
+        
+        "sslPrivateKey": null
+    },
+    "database":{
+	"host": "localhost",
+	"port": 3306,
+	"database":"gordopibot_db",
+	"user":"gordopibot",
+	"password":"gordopibot",
+	"pool_name":"gordopibot_pool",
+	"pool_size":10
+    },
+    "sesionTimeout":10,
+    "idGrupoSocios":-1001394268716,
+    "idGrupoJugones":-1001435263688,
+    "maxDiasFuturoReserva":7,
+    "minHoraApertura":8,
+    "maxHoraApertura":23,
+    "minDuracion":1,
+    "maxDuracion":6,
+    "aforo":10
+
+}

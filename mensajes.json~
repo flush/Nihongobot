@@ -1,0 +1,4 @@
+{
+    "saludo": "Hola {nombreUsuario}. ¿Que quieres hacer hoy?",
+    "cancelar":"Cancelar"
+}

@@ -1,0 +1,16 @@
+{
+    "saludo": "Hola {nombreUsuario}. ¿Qué quieres hacer hoy?",
+    "cancelar":"Cancelar",
+    "usuario_sin_sesion": "Lo siento, has tardado demasiado. Te toca empezar otra vez.",
+    "adios":"Hasta luego, Mari Carmen",
+    "fin_repaso": "Has acabado el repaso. Has acertado {aciertos}/{preguntas}.",
+    "pregunta_significado": "¿Cuál es el significado de <b>{valor}</b>?",
+    "pregunta_hiragana": "¿Qué significa: <b>{valor}</b>?",
+    "pregunta_kanji":"¿Cuál es el kanji de <b>{valor}</b>?",
+    "error":"<b>!!!!MEEEEEEEEECCC Errrorrrrrr¡¡¡¡</b>\n\n\n",
+    "acierto": "<b>¡¡Correcto!!</b>\n\n\n",
+    "siguiente_pregunta": "➡"
+    
+
+    
+}

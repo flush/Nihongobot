@@ -1,0 +1,12 @@
+import config
+import traceback
+
+       
+class Partida():
+
+
+    def __init__(self):
+
+    def generarPartida(idCategoria):
+        
+

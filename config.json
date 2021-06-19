@@ -1,0 +1,29 @@
+{
+
+    "botToken": "1857814526:AAE8SpbHkklx-RJiwqtT5I2MiVEDdeNYWVU",
+
+    "connectionType": "polling",
+
+    "webhookOptions":{
+        "webhookHost": null,
+        
+        "webhookPort": null,
+        
+        "webhookListen": "0.0.0.0",
+        
+        "sslCertificate": null,
+        
+        "sslPrivateKey": null
+    },
+    "database":{
+	"host": "localhost",
+	"port": 3306,
+	"database":"nihongobot_db",
+	"user":"nihongobot",
+	"password":"nihongobot",
+	"pool_name":"nihongobot_pool",
+	"pool_size":10
+    },
+    "sesionTimeout":10,
+    "numOpciones":4
+}
