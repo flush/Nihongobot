@@ -20,9 +20,7 @@
 	"port": 3306,
 	"database":"nihongobot_db",
 	"user":"nihongobot",
-	"password":"nihongobot",
-	"pool_name":"nihongobot_pool",
-	"pool_size":10
+	"password":"nihongobot"
     },
     "sesionTimeout":10,
     "numOpciones":4

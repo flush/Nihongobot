@@ -7,8 +7,8 @@
     "pregunta_significado": "¿Cuál es el significado de <b>{valor}</b>?",
     "pregunta_hiragana": "¿Qué significa: <b>{valor}</b>?",
     "pregunta_kanji":"¿Cuál es el kanji de <b>{valor}</b>?",
-    "error":"<b>!!!!MEEEEEEEEECCC Errrorrrrrr¡¡¡¡</b>\n\n\n",
-    "acierto": "<b>¡¡Correcto!!</b>\n\n\n",
+    "error":"<b>!!!!MEEEEEEEEECCC Errrorrrrrr¡¡¡¡</b>",
+    "acierto": "<b>¡¡Correcto!!</b>",
     "siguiente_pregunta": "➡"
     
 

@@ -17,6 +17,9 @@ def responder(call):
     if pregunta.opcionCorrecta.id == idRespuesta:
         sesion.partida.aciertos+=1
         texto=config.mensajes["acierto"]
+    for caracteristica in  pregunta.opcionCorrecta.caracteristicas:
+        if caracteristica.postRespuesta and caracteristica.valor:
+            texto+="\n"+caracteristica.valor
     markup  = types.InlineKeyboardMarkup()
     markup.row_width=1
     opciones=[]
@@ -29,7 +32,7 @@ def responder(call):
         opciones.append(types.InlineKeyboardButton(text=textoOpcion ,callback_data="novalepana"))
     opciones.append(types.InlineKeyboardButton(text=config.mensajes["siguiente_pregunta"] ,callback_data="preguntar"))
     markup.add(*opciones)
-    texto+=pregunta.getTextoPregunta()
+    texto+="\n\n"+pregunta.getTextoPregunta()
 
     config.bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.id,text=texto,reply_markup=markup)            
 

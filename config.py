@@ -41,6 +41,7 @@ mensajes = json.load(open(path.join(dirPath,'mensajes.json'),encoding='utf-8'))
 
 bot = telebot.TeleBot(config["botToken"],parse_mode="HTML")
 
+
 #creación del pool de conexión
 dbconfig = config['database']
 sesionHandler = SesionHandler()

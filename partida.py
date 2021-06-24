@@ -29,6 +29,7 @@ class Pregunta():
         self.opciones = []
         self.caracteristicaPregunta = None
         self.caracteristicaRespuesta = None
+        self.caracteristicaPost = None
         
         self.opciones.append(itemInfo)
 

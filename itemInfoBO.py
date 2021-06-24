@@ -13,7 +13,7 @@ class ItemInfoDB():
             cur = con.cursor()
             sql = """
             select
-            item.id,item.idCategoria,categ.nombre,valor,caract.nombre,caract.id, caract_categ.pregunta, caract_categ.respuesta
+            item.id,item.idCategoria,categ.nombre,valor,caract.nombre,caract.id, caract_categ.pregunta, caract_categ.respuesta, caract_categ.postRespuesta
             from ITEM_INFO item,
             VALOR_CARACTERISTICA valor,
             CARACTERISTICAS caract,
@@ -31,7 +31,7 @@ class ItemInfoDB():
                 idItem = str(fila[0])
                 if idItem not in itemsInfo:
                     itemsInfo[idItem]  = ItemInfo(fila[0],fila[1],fila[2])
-                itemsInfo[idItem].addCaracteristica(fila[3],fila[4],fila[5],fila[6],fila[7])
+                itemsInfo[idItem].addCaracteristica(fila[3],fila[4],fila[5],fila[6],fila[7],fila[8])
 
         except:
             traceback.print_exc()
@@ -48,8 +48,8 @@ class ItemInfo():
         self.nombreCategoria = nombreCategoria
         self.caracteristicas = []
 
-    def addCaracteristica(self,valor,nombre,idCaracteristica,pregunta,respuesta):
-        self.caracteristicas.append(Caracteristica(idCaracteristica,valor,nombre,pregunta,respuesta))
+    def addCaracteristica(self,valor,nombre,idCaracteristica,pregunta,respuesta,postRespuesta):
+        self.caracteristicas.append(Caracteristica(idCaracteristica,valor,nombre,pregunta,respuesta,postRespuesta))
 
 
     def getValorCaracteristica(self,idCaracteristica):
@@ -61,10 +61,11 @@ class ItemInfo():
         
 
 class Caracteristica():
-    def __init__(self,id,valor,nombre,pregunta,respuesta):
+    def __init__(self,id,valor,nombre,pregunta,respuesta,postRespuesta):
         self.id = id
         self.valor = valor
         self.nombre = nombre
         self.pregunta = pregunta
         self.respuesta =respuesta
+        self.postRespuesta = postRespuesta
         
