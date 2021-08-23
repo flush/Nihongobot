@@ -4,8 +4,6 @@ import config
 import botones
 import repasar
 import random
-import sys
-import telebot
 
 app = Flask(__name__)
 
@@ -13,7 +11,7 @@ app = Flask(__name__)
 def home():
     return 'TelegramBots listening'
 
-@app.route('/Nihongobot', methods=['POST'])
+@app.route('/Gordopibot', methods=['POST'])
 def getMessage():
     print("request recieved", file=sys.stderr)
     json_string = request.get_data().decode('utf-8')
@@ -57,7 +55,7 @@ print('bot arrancado')
 
 random.seed()
 if __name__ == "__main__":
-    app.run(host='127.0.0.1',port=8080)
+    app.run(host='0.0.0.0',ssl_context,port=5000)
     
 
 
